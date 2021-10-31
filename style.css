@@ -544,6 +544,22 @@ footer ul li a{
 	}
 }
 
+@media screen and (max-width:600px){
+	.skillbars{
+		padding: 25px 30px;
+		width: 600px;
+		background: rgb(63, 60, 60);
+		border-radius: 10px;
+		margin-left: 30rem
+	}
+	.skillbars .bar{
+		margin-top: 33px;
+		margin-bottom: 15px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+}
+
 
 
 
