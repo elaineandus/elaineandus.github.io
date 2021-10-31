@@ -544,7 +544,7 @@ footer ul li a{
 	}
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:500px){
 	.skillbars{
 		padding: 25px 30px;
 		width: 600px;
