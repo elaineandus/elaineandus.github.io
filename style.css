@@ -580,8 +580,17 @@ footer ul li a{
 	.explore{
 		margin-left: -926px;
 	}
+	.section-a .container h1{
+		font-size: 3.5rem;
+		margin-left: -40px;
+	}
+	.section .container p{
+		font-size: 19px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 	.skillbars{
-		margin-left: 16rem;
+		margin-left: 17.2rem;
 	}
 	footer h5{
 		font-size: 2rem;
