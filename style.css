@@ -432,7 +432,7 @@ footer ul li a{
 	}
 }
 
-@media screen and (min-width:960px){
+@media screen and (min-width:768px){
 	.navbar .container{
 		display: flex;
 		align-items: center;
@@ -541,6 +541,55 @@ footer ul li a{
 	}
 	footer ul li{
 		margin: 1rem;
+	}
+}
+
+@media screen and (min-width:1200px){
+	.navbar{
+		padding: 2rem;
+	}
+	.navbar-brand{
+		font-size: 25px;
+		margin-left: -45px;
+	}
+	.navbar-nav{
+		padding: 1rem 0.2rem 0.4rem 0;
+	}
+	.navbar-nav a{
+		margin-left: 50px;
+		padding: 0.5rem 0.1rem;
+	}
+	.navbar .sociallinks a{
+		width: 30px;
+		height: 30px;
+		margin: 0 0.1rem;
+	}
+	.banner-title{
+		font-size: 4.5rem;
+		line-height: 1.2;
+	}
+	.container h1{
+		margin-left: -30px;
+		margin-top: 50px;
+	}
+	.banner .container p{
+		margin-top: 10px;
+		margin-left: -40px;
+		font-size: 1.2rem;
+	}
+	.explore{
+		margin-left: -926px;
+	}
+	.skillbars{
+		margin-left: 16rem;
+	}
+	footer h5{
+		font-size: 2rem;
+		padding-top: 90px;
+	}
+	footer ul li{
+		font-size: 1.8rem;
+		padding-bottom: 75px;
 	}
 }
 
