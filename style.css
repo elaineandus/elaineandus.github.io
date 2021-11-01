@@ -544,7 +544,7 @@ footer ul li a{
 	}
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1300px){
 	.navbar{
 		padding: 2rem;
 	}
@@ -590,7 +590,13 @@ footer ul li a{
 		margin-right: 20px;
 	}
 	.skillbars{
-		margin-left: 16rem;
+		margin-left: 20.5rem;
+	}
+	.projects-content{
+		margin-left: 1.2rem;
+	}
+	.secondboxcontent p{
+		padding-top: 0.8rem;
 	}
 	footer h5{
 		font-size: 2rem;
