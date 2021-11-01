@@ -432,7 +432,7 @@ footer ul li a{
 	}
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:960px){
 	.navbar .container{
 		display: flex;
 		align-items: center;
