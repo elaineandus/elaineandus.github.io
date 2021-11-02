@@ -127,7 +127,7 @@ header{
 	padding: 1rem 1rem;
 	background: linear-gradient(90deg,#277697,#BCAFBC,#277697);	
 }
-.section-a .container h1{
+.section-a .contabout h1{
 	font-size: 3rem;
 	line-height: 2em;
 	color: rgb(0, 0, 0);
@@ -139,11 +139,11 @@ header{
     padding-bottom: 1rem;
     border-radius: 30px;
 }
-.container{
+.contabout{
 	max-width: 960px;
 	padding: 0 0 0 0;
 }
-.section .container p{
+.section .contabout p{
 	color:rgb(0, 0, 0);
 	text-align: justify;
 }
@@ -650,13 +650,6 @@ there are two types of unit of measurements
 1em = 16px
 2em = 32px
 0.5em = 8px
-
-https://bagasonakimdianneact03.000webhostapp.com/about.html
-https://www.w3schools.com/css/css3_mediaqueries_ex.asp
-view-source:https://armand1stproj.netlify.app/?name=&email=s
-https://stackoverflow.com/questions/49164515/bootstrap-navbar-and-containers-exceed-overflow-the-max-width-assigned
-https://stackoverflow.com/questions/13550541/media-min-width-max-width?fbclid=IwAR2DiG0BF4MrxqJ4V-bpEERnkryKr5Q6BnQNiABXNWrapBBGis03TvrcS0Q
-
 
 margin - section of margin can be specified either in pixels or even percentage
 
