@@ -63,6 +63,17 @@ header{
     line-height: 1.2;
     color: #fff;
     text-transform: uppercase;
+    animation: bannertitle 0.7s linear 1;
+}
+@keyframes bannertitle {
+	0%{
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
 .banner p{
     padding: 1rem 0 2rem 0;
@@ -70,6 +81,8 @@ header{
     text-transform: capitalize;
     font-weight: 300;
     word-spacing: 2px;
+    animation: bannertitle 0.7s linear forwards 1;
+	animation-delay: 0.7s;
 }
 .banner .container button{
     width: 120px;
