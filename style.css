@@ -132,6 +132,7 @@ header{
 }
 
 /*---------------SKILL SECTION -------------*/
+/*---------------SKILL SECTION -------------*/
 .section-b{
     background:#111111;
 }
@@ -162,19 +163,38 @@ header{
 .skillbars .bar .container span{
 	font-weight: 500;
     font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
 }
+@keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
 .skillbars .bar .barline{
 	height: 10px;
 	width: 100%;
 	background: #ffffff;
 	position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
 	border-radius: 10px;
 	box-shadow: inset 0 1px 1px rgba(85, 9, 9, 0.05)gba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
 }
 .bar .barline span{
 	height: 100%;
 	position: absolute;
+    border-radius: 70px;
+    transform: scaleX(0);
+    transform-origin: left;
 	background: #131324;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .barline.html span{
 	width: 70%;
@@ -194,6 +214,20 @@ header{
 .barline.microsoftoffice span{
 	width: 90%;
 }
+.progress-line span::before{
+	position: absolute;
+	content: "";
+	top: -10px;
+	right: 0;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color: #000;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+} 
 .barline span::after{
 	position: absolute;
 	top: -28px;
