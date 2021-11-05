@@ -470,6 +470,9 @@ footer{
         height: auto;
         width: 100%;
     }
+    .linesix{
+        font-size: 0.95rem;
+    }
 }
 
 @media screen and (min-width:650px){
@@ -519,7 +522,7 @@ footer{
     }
     #projectimg{
         height: 12rem;
-        width: 20rem;
+        width: 17.5rem;
     }
     #mycontacts{
         display: flex;
