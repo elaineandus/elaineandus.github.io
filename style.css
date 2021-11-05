@@ -6,7 +6,6 @@
 body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
-    color: #333;
 }
 .container{
     max-width: 1320px;
@@ -26,7 +25,7 @@ header{
 }
 .navbar-brand{
     color: #fff;
-    font-size: 24px;
+    font-size: 24px;    
     display: block;
     text-align: center;
     text-decoration: none;
@@ -47,8 +46,6 @@ header{
     padding: 0.4rem 0.1rem;
     letter-spacing: 3px;
     transition:opacity 0.5s ease;
-
-
 }
 .navbar-nav a:hover{
     color: coral;
@@ -74,22 +71,26 @@ header{
     font-weight: 300;
     word-spacing: 2px;
 }
-.explorebtn button{
-    width: 10rem;
-    height: 3.3rem;
+.banner .container button{
+    width: 120px;
+    padding: 10px 20px;
     background: none;
     border: 1px solid #fff;
     border-radius: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.explorebtn a{
-    font-size: 20rem;
-    text-decoration: none;
-}
-.explorebtn button:hover{
+.banner .container button:hover {
     color: white;
     background-color: #111111;
-}   
-
+}
+  
+.banner .container button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+} 
 
 /*---------------ABOUT SECTION -------------*/
 .section-a{
@@ -103,7 +104,6 @@ header{
 	text-align: center;
 }
 .aboutpage{
-    /* min-height: auto;  */
     min-height: 85vh; 
     display: flex;
     flex-direction: row;
@@ -128,8 +128,9 @@ header{
     font-size: 50px;
     font-weight: 100;
     color: black;
-    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
 }
+
 /*---------------SKILL SECTION -------------*/
 .section-b{
     background:#111111;
@@ -224,6 +225,7 @@ header{
 span{
     color: #fff;
 }
+
 /*---------------PROJECT SECTION ------------*/
 .section-c{
     background: linear-gradient(90deg,#277697,#BCAFBC,#277697);
@@ -287,6 +289,7 @@ span{
     color: white;
     background-color: #110c3fc9;
 }
+
 /*---------------CONTACT SECTION -------------*/
 .section-d{
     background: url(img/typing4.jpg) center/cover no-repeat fixed;
@@ -303,105 +306,80 @@ span{
 .contactpage{
     min-height: 85vh;
 }
-.form{
-    height: 300px;
-    overflow: hidden;
-    padding-top: 25px;
-}	
-.contactboxinside{
-    margin-left: 10%;
-    margin-right: 50%;
-    background-color:  rgba(0,0,0,.5);
-    padding: 20px;
-    height: 50vh;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+#mycontacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
-.contact-head{
+.firstcont{
+    margin-right: 3rem;
+    padding: 1rem;
+    width: 30vw;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
     text-align: center;
+    background-color:  rgba(0,0,0,.5);
+    border-radius: 10px;
+    line-height: 1.5rem;
 }
 .contactinput{
     padding: 8px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
-}
-.contactcenter{
-    padding: 5px;
-    width: 100%;
-    border-style: none;
-    font-family: 'Montserrat', sans-serif;
 }
 .fa-user,.fa-envelope{
     width: 30px;
     background: #313030a8;
     padding: 5px;
 }
-.bottom-contact{
-    text-align: center;
+.contactcenter{
+    padding: 5px;
+    width: 100%;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 button.contactsubmit{
-    background-color: #313030a8;
+    font-family: 'Poppins', sans-serif;
     color: white;
+    background-color: #313030a8;
     padding: 10px;
     border: none;
     cursor: pointer;
     opacity: 0.9;
-    border-radius: 50px;
-    font-family: 'Montserrat', sans-serif;
+    border-radius: 40px;
 }
-/*------second box for address kineme----- */
-.boxdetails{
-	margin-left: 55%;
-    margin-right: 10%;
-	margin-top: -300px;
-	padding-bottom: 90px;
-	background-color:  rgba(0,0,0,.5);
-	padding: 30px;
-	color: rgb(255, 255, 255);
-	border-radius: 10px;
-    overflow: hidden;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.details-group{
-	position: relative;
-    margin: auto;
-    font-size: 16px;
-    padding: 10px;
-    color: rgb(226, 219, 219);
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-.linetwo h3, .linefour h3, .linesix h3{
-	color: rgb(255, 249, 249);
+.secondcont{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 3rem;
+    padding: 2rem;
+    width: 30vw;
+    height: auto;
+    background-color:  rgba(0,0,0,.5);
+    border-radius: 10px;
+    line-height: 1.5rem;
 }
 .wrapper{
 	display: grid;
 	grid-auto-rows: minmax(70px, auto);
 	grid-gap: 5px;
 	line-height: 1.5;
-	/* overflow: hidden; */
-}
-.secondboxcontent p{
-	font-size: 14px;
-	font-style: italic;
-	width: 100%;
 }
 .lineone{
-  	grid-column: 3;
-	grid-row: 1;
-	text-align: center;
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
 }
 .linetwo{ 
-	grid-column:4;
-	grid-row: 1 / 2;
-	padding-left:20px;
+    grid-column:4;
+    grid-row: 1 / 2;
+    padding-left:20px;
 }
 .linethree{
-  	grid-column: 4/3;
+    grid-column: 4/3;
     grid-row: 2 / 3;
     text-align: center;
     padding-top: 7px;
@@ -448,6 +426,18 @@ footer{
     margin: 0 0.3rem;
 }
 
+/*---------------- MEDIA QUERIES -------------*/
+@media only screen and (max-width:400px){
+    .navbar-nav a{
+        display: block;
+        text-align: center;
+    }
+    #projectimg{
+        height: auto;
+        width: 100%;
+    }
+}
+
 @media screen and (min-width:650px){
     .navbar-nav a{
         padding-right: 1.2rem;
@@ -479,7 +469,7 @@ footer{
         width: auto;
         height: auto;
         margin: auto;
-    }
+    }   
     .textbox{
         width: auto;
         height: auto;
@@ -497,42 +487,49 @@ footer{
         height: 12rem;
         width: 20rem;
     }
-    .contactbox{
+    #mycontacts{
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
     }
-    .contactboxinside{
-        width: 72%; 
+    .firstcont{
+        margin: 2rem;
+        width: 60vw;
+        padding: 2rem;
     }
-    .boxdetails{
-		display: flex;
-        flex-direction: column;  
-	}
-    .secondboxcontent{
-        display: flex;
-        flex-direction: column;  
+    .secondcont{
+        margin: 2rem;
+        width: 60vw;
     }
+    
 }
 @media only screen and (max-width:1100px){
-    .explorebtn button{
-        width: 8rem;
-        height: 2.5rem;
-        border: 1px solid #fff;
-        border-radius: 25px;
-    }
-    .explorebtn a{
-        font-size: 0.9rem;
-        color: #f4f4f4;
-        text-decoration: none;
+    .aboutpicture{
+        width: auto;
     }
     .aboutparagraph{
         padding: 2rem 4rem;
     }
-    .aboutparagraph h2{
-        font-size: 2.3rem;
+    .aboutparagraph p{
+        font-size: 1.35rem;
+    }
+    .skillbars{
+        margin: auto;
+    }
+    .project{
+        height: auto;
+    }   
+    .firstcont{
+        height: auto;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width:1100px){
+    .aboutparagraph{
+        padding: 2rem 4rem;
     }
     .aboutparagraph p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .skillbars{
         margin: auto;
@@ -541,13 +538,51 @@ footer{
         height: auto;
     }   
 }
-@media only screen and (max-width:400px){
+
+@media only screen and (min-width:1300px){
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner p{
+        font-size: 1.5rem;
+    }
+    .aboutparagraph{
+        padding: auto;
+    }
+    .aboutparagraph p{
+        font-size: 1.5rem;
+    }   
+}
+
+@media only screen and (min-width:1350px){
+    .aboutparagraph p{
+        font-size: 1.8rem;
+    }   
+}
+
+@media only screen and (min-width:1400px){
     .navbar-nav a{
-        display: block;
-        text-align: center;
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
     }
-    #projectimg{
-        height: auto;
-        width: 100%;
+    .aboutparagraph p{
+        font-size: 1.8rem;
+    }   
+}
+
+@media only screen and (min-width:1900px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
     }
+    .banner-title{
+        font-size: 6rem;
+    }
+    .banner p{
+        font-size: 2.5rem;
+    }
+    .aboutparagraph p{
+        font-size: 2.3rem;
+    }  
+
 }
