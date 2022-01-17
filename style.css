@@ -156,7 +156,7 @@ header{
     color: #fff;
 }
 .aboutpage .aboutcontent button {
-    width: 156px;
+    width: 165px;
     padding: 10px 20px;
     background-color: #111111;
     border: 1px solid #fff;
@@ -173,6 +173,11 @@ header{
     color: #fff;
     font-size: 15px;
 } 
+.forresume{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
 
 /*----- SKILL SECTION -----*/
 .section-b{
