@@ -3004,7 +3004,7 @@ section .container {
 .forresume{
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content:space-around;
 }
 /* <script type="text/javascript">
 	// <![CDATA[  <-- For SVG support
