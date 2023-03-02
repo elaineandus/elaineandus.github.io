@@ -391,9 +391,9 @@ section .container {
   padding: 10px 20px;
   background-color: #111111;
   border: 1px solid #fff;
-  border-radius: 20px;
+  border-radius: 5px;
   /* margin-bottom: 10px; */
-  margin: 5px;
+  margin: 5px 10px 0 0;
   cursor: pointer;
   transition: 0.3s;
 }
