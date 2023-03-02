@@ -945,3 +945,10 @@ section .container {
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width:768px){ 
+  .forresume{
+    flex-direction: column;
+  }
+}
+
