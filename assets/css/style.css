@@ -859,10 +859,11 @@ section .container {
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
+  background: rgb(29, 186, 29);
   text-align: left;
   padding: 15px;
   font-weight: 600;
+  color: rgba(29, 186, 29, 0);
 }
 .contact .php-email-form .error-message br + br {
   margin-top: 25px;
