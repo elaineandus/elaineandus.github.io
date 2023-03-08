@@ -874,7 +874,7 @@ section .container {
   text-align: center;
   padding: 15px;
   font-weight: 600;
-  color: /* #71C562; */ #71a5ff;
+  color: /* #71C562; */ #111111;
 }
 .contact .php-email-form .loading {
   display: none;
