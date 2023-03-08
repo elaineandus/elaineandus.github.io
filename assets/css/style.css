@@ -859,21 +859,22 @@ section .container {
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #71C562;
+  background: /* #71C562; */ #71a5ff;
   text-align: left;
   padding: 15px;
   font-weight: 600;
-  color: #71C562;
+  color: /* #71C562; */ #71a5ff;
 }
-.contact .php-email-form .error-message br + br {
+/* .contact .php-email-form .error-message br + br {
   margin-top: 25px;
-}
+} */
 .contact .php-email-form .sent-message {
   display: none;
   background: #B3CEE5;
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  color: /* #71C562; */ #71a5ff;
 }
 .contact .php-email-form .loading {
   display: none;
