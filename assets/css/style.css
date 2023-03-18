@@ -876,6 +876,9 @@ section .container {
   font-weight: 600;
   color: /* #71C562; */ #111111;
 }
+.sent-message i{
+  font-size: 1.1rem;
+}
 .contact .php-email-form .loading {
   display: none;
   background: rgba(255, 255, 255, 0.08);
