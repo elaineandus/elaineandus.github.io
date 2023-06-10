@@ -2,9 +2,10 @@
   --font-opensans: "Open Sans", sans-serif;
   --font-raleway: "Raleway", sans-serif;
   --font-poppins: "Poppins", sans-serif;
-
-  --color-blue: #71a5ff;
   --color-white: #fff;
+  --color-black: #111111;
+  --color-blue: #71a5ff;
+  --color-light-blue: #B3CEE5;
 }
 
 body {
@@ -14,10 +15,11 @@ body {
   position: relative;
   background: transparent;
 }
+
 body::before {
   content: "";
   position: fixed;
-  background: url("../img/background4.jpg") top right no-repeat; 
+  background: url("../img/background.jpg") top right no-repeat; 
   filter: brightness(20%);
   background-size: cover;
   left: 0;
@@ -26,6 +28,7 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -57,9 +60,11 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   text-align: center;
 }
+
 #header * {
   transition: ease-in-out 0.3s;
 }
+
 #header h1 {
   font-size: 50px;
   margin: 0;
@@ -68,61 +73,73 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: var(--font-poppins);
 }
+
 #header h1 a, #header h1 a:hover {
   color: var(--color-white);
   line-height: 1;
   display: inline-block;
 }
+
 #header h2 {
   font-size: 26px;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
 }
+
 #header h2 span {
   color: var(--color-blue);
   font-weight: 1000;
 }
-.white{
+
+.white {
   color: var(--color-white);
 }
+
 #header img {
   padding: 0;
   margin: 0;
 }
+
 #header .social-links {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
+
 #header .social-links a {
-    border: 2px solid var(--color-white);
-    color: var(--color-white);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    margin: 0 0.3rem;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 0 0.3rem;
 }
+
 #header .social-links a:hover {
   transform: scale(1.2);
 }
-h5{
+
+h5 {
   padding-top: 1rem;
   font-size: 1rem;
 }
+
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
   }
+
   #header h2 {
     font-size: 20px;
     line-height: 30px;
   }
+
   #header .social-links {
     margin-top: 15px;
   }
@@ -307,7 +324,7 @@ section.section-show {
   padding-bottom: 45px;
 }
 section .container {
-  background: #111111;
+  background: var(--color-black);
   padding: 30px;
 }
 
@@ -336,7 +353,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #B3CEE5;
+  background: var(--color-light-blue);
   margin: 4px 10px;
 }
 .section-title p {
@@ -371,7 +388,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #B3CEE5;
+  color: var(--color-light-blue);
   line-height: 0;
 }
 .about-me .content p:last-child {
@@ -389,7 +406,7 @@ section .container {
 .forresume button {
   width: 100%;
   padding: 10px 20px;
-  background-color: #111111;
+  background-color: var(--color-black);
   border: 1px solid var(--color-white);
   border-radius: 5px;
   /* margin-bottom: 10px; */
@@ -437,7 +454,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #B3CEE5;
+  background-color: var(--color-light-blue);
 }
 
 /* INTERESTS */
@@ -485,7 +502,6 @@ section .container {
 .certificates .certificate-item h3 {
   font-size: 18px;
   font-weight: bold;
-  /* margin: 10px 0 5px 20px; */
   padding: 10px;
   text-align: center;
   color: var(--color-white);
@@ -493,8 +509,6 @@ section .container {
 .certificates .certificate-item h4 {
   font-size: 14px;
   color: #999;
-  /* margin: 0 0 0 45px; */
-  /* padding: 10px; */
   text-align: center;
 }
 .certificates .certificate-item .quote-icon-left, .certificates .certificate-item .quote-icon-right {
@@ -533,7 +547,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .certificates .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #B3CEE5;
+  background-color: var(--color-light-blue);
 }
 .icon-box img:hover{
   transform: scale(1.2);
@@ -552,7 +566,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #B3CEE5;
+  background: var(--color-light-blue);
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -592,16 +606,16 @@ section .container {
 }
 .gallery .icon-box:hover {
   background: var(--color-blue);
-  border-color: #B3CEE5;
+  border-color: var(--color-light-blue);
 }
 .gallery .icon-box:hover .icon {
   background: var(--color-white);
 }
 .gallery .icon-box:hover .icon i {
-  color: #B3CEE5;
+  color: var(--color-light-blue);
 }
 .gallery .icon-box:hover .icon::before {
-  background: #B3CEE5;
+  background: var(--color-light-blue);
 }
 .gallery .icon-box:hover h4 a, .gallery .icon-box:hover p {
   color: var(--color-white);
@@ -749,7 +763,7 @@ section .container {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
-  background: #111111;
+  background: var(--color-black);
   position: fixed;
   left: 0;
   right: 0;
@@ -804,7 +818,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #B3CEE5;
+  background-color: var(--color-light-blue);
 }
 
 /*--------------------------------------------------------------
@@ -814,8 +828,7 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  /* background: rgba(255, 255, 255, 0.08); */
-  background: #111111;
+  background: var(--color-black);
   
 }
 .contact .info-box i.bx {
@@ -852,11 +865,11 @@ section .container {
   transition: 0.3s;
 }
 .contact .info-box .social-links a:hover {
-  color: #B3CEE5;
+  color: var(--color-light-blue);
 }
 .contact .php-email-form {
   padding: 30px;
-  background: #111111;
+  background: var(--color-black);
 }
 .contact .php-email-form .error-message {
   display: none;
@@ -869,11 +882,11 @@ section .container {
 }
 .contact .php-email-form .sent-message {
   display: none;
-  background: #B3CEE5;
+  background: var(--color-light-blue);
   text-align: center;
   padding: 15px;
   font-weight: 600;
-  color: #111111;
+  color: var(--color-black);
 }
 .sent-message i{
   font-size: 1.1rem;
@@ -891,7 +904,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #B3CEE5;
+  border: 3px solid var(--color-light-blue);
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
