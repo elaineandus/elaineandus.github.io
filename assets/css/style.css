@@ -397,6 +397,7 @@ section .container {
 .about-me .content .intro{
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.864);
+  text-align: justify;
 }
 .forresume{
   display: flex;
